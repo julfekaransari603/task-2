@@ -1,0 +1,14 @@
+int main (void) 
+{ 
+char str[127], *p, temp[127]=" ";
+char* lim=".,;:?!"; 
+printf("rechennia: ");
+   gets (str);
+   
+   p=str+strlen(str)-1;
+   while ((p>str) && isalphe(*p)) p--;
+   *p='\0';
+   puts (str);
+     
+    return 0;
+}
